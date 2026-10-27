@@ -433,11 +433,13 @@ class SemanticSearchEngine:
                 query_vector.reshape(1, -1),
                 limit,
             )
-            pairs = zip(scores[0].tolist(), indices[0].tolist())
+            pairs = list(zip(scores[0].tolist(), indices[0].tolist()))
         else:
             raw_scores = self._embeddings @ query_vector
             order = np.argsort(-raw_scores)[:limit]
-            pairs = ((float(raw_scores[index]), int(index)) for index in order)
+            pairs = [(float(raw_scores[index]), int(index)) for index in order]
+
+        pairs.sort(key=lambda pair: (-pair[0], pair[1]))
 
         results: list[SearchResult] = []
         for score, index in pairs:

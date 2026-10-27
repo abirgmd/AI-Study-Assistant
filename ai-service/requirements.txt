@@ -1,0 +1,6 @@
+# Installation complète : modèles du cours (MiniLM multilingue, flan-t5) en plus du socle.
+# Versions testées avec Python 3.13 (Python 3.12 minimum).
+-r requirements-ci.txt
+torch==2.14.1
+transformers==5.20.2
+sentence-transformers==6.2.0

@@ -1,0 +1,64 @@
+=== Syntaxe PHP des fichiers du module Assistant IA 2 === 
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in public\ia-api.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in public\api.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\service.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\courses.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\rag.php
+ 
+=== Syntaxe JavaScript === 
+ 
+=== tests/ia_modules_test.php === 
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+PASS: Catégories : 8 matières lues depuis categories.json
+PASS: Catégories : « À classer » est la valeur par défaut
+PASS: Catégories : l’étudiant ne peut pas choisir « À classer »
+PASS: Catégories : « Réseaux et sécurité » présente
+PASS: Config : le module lit config/ia-service.php
+PASS: Config : le module ne lit jamais config/ai.php (conflit évité)
+PASS: Config : clés base_url, token, timeout, index_timeout
+PASS: Question : espaces réduits et bords supprimés
+PASS: Question : 3 caractères acceptés
+PASS: Question : 2 caractères refusés (422)
+PASS: Question : espaces seuls refusés (422)
+PASS: Question : 501 caractères refusés (422)
+PASS: Question : 500 caractères accentués acceptés (compte en caractères, pas en octets)
+PASS: Sources : types entiers, flottants et nuls respectés, champs inconnus retirés
+PASS: Sources : numéro de page converti en entier
+PASS: Limite : 20 questions par 10 minutes
+PASS: Limite : question de 3 à 500 caractères
+PASS: Message : indisponibilité expliquée sans détail technique
+
+Tous les tests sont passés.
+ 
+=== ai-service : pytest et ruff === 
+All checks passed!
+........................................................................ [ 76%]
+......................                                                   [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\xampp\htdocs\ai-study-assistant-integre\ai-service\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+94 passed, 1 warning in 60.21s (0:01:00)
+ 
+Test de bout en bout (service IA et serveur demarres) : 
+  "C:\xampp\htdocs\ai-study-assistant-integre\ai-service\.venv\Scripts\python.exe" tests\smoke_ia.py http://localhost/ai-study-assistant-integre/public/ 
+FIN 

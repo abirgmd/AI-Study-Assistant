@@ -1,0 +1,3 @@
+version,parametres_millions,taille_mo,latence_moy_ms,latence_min_ms,latence_max_ms,tokens_entree,tokens_generes,repetitions,threads
+float32,247.6,944.6,3156.4,2989.8,3291.1,400,60,5,2
+int8 dynamique,247.6,307.1,2114.5,2053.1,2163.3,400,60,5,2

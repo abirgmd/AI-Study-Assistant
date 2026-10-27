@@ -1,0 +1,13 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.17, pytest-9.1.1, pluggy-1.7.0
+rootdir: C:\xampp\htdocs\ai-study-assistant-integre\ai-service
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, cov-7.1.0
+collected 94 items
+
+tests\test_backends.py ........                                          [  8%]
+tests\test_classification.py ..................                          [ 27%]
+tests\test_core.py ........................                              [ 53%]
+tests\test_rag.py ..............................                         [ 85%]
+tests\test_security.py .

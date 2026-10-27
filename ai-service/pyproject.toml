@@ -1,0 +1,24 @@
+[project]
+name = "ai-study-assistant-service"
+version = "1.0.0"
+description = "Service IA (RAG et classification) de l'application AI Study Assistant"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["slow: tests qui chargent de vrais modèles (désactivés par défaut en CI)"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Le paquet Module_3 porte le nom du module du cours (majuscule volontaire, import « from Module_3... »).
+"Module_3/**" = ["N999"]
+
+[tool.coverage.run]
+source = ["app"]

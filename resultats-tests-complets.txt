@@ -1,0 +1,374 @@
+=== TESTS COMPLETS AI Study Assistant ===
+
+=== 1. Python 3.13 ===
+OK : C:\Users\ABIR\AppData\Local\Programs\Python\Python313\python.exe
+
+=== 2. Environnement du service IA : ai-service\.venv ===
+Dependances : code retour 0
+
+=== 3. Services MySQL et Apache ===
+
+=== 4. Base de donnees : database\schema.sql (non destructif) ===
+Import : code retour 0
+
+=== 5. Service IA sur 127.0.0.1:8001 (fenetre dediee) ===
+ATTENTION : ai-service\.env absent. Le service IA n'est pas demarre. Creez ce fichier puis relancez.
+
+=== 6. lancer-tests-ia.bat : syntaxe, ia_modules, ruff, pytest ===
+=== Syntaxe PHP des fichiers du module Assistant IA 2 === 
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in public\ia-api.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in public\api.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\service.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\courses.php
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+No syntax errors detected in ia-modules\rag.php
+ 
+=== Syntaxe JavaScript === 
+ 
+=== tests/ia_modules_test.php === 
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+PASS: Catégories : 8 matières lues depuis categories.json
+PASS: Catégories : « À classer » est la valeur par défaut
+PASS: Catégories : l’étudiant ne peut pas choisir « À classer »
+PASS: Catégories : « Réseaux et sécurité » présente
+PASS: Config : le module lit config/ia-service.php
+PASS: Config : le module ne lit jamais config/ai.php (conflit évité)
+PASS: Config : clés base_url, token, timeout, index_timeout
+PASS: Question : espaces réduits et bords supprimés
+PASS: Question : 3 caractères acceptés
+PASS: Question : 2 caractères refusés (422)
+PASS: Question : espaces seuls refusés (422)
+PASS: Question : 501 caractères refusés (422)
+PASS: Question : 500 caractères accentués acceptés (compte en caractères, pas en octets)
+PASS: Sources : types entiers, flottants et nuls respectés, champs inconnus retirés
+PASS: Sources : numéro de page converti en entier
+PASS: Limite : 20 questions par 10 minutes
+PASS: Limite : question de 3 à 500 caractères
+PASS: Message : indisponibilité expliquée sans détail technique
+
+Tous les tests sont passés.
+ 
+=== ai-service : pytest et ruff === 
+All checks passed!
+...........................
+=== 7. Tests PHP (sans reseau) ===
+--- quiz_validation_test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+PASS: Quiz exemple : 5 questions valides, aucune rejetée
+PASS: Quiz invalide : les 6 questions défectueuses sont rejetées
+Study quiz insuffisant : 6 reçu(s), type demandé=mixed, types={"mcq":6}, premier={"question":"Combien d’options cette question possède-t-elle ?","options":["Deux","Trois","Quatre"],"correct":"A","explanation":"Cette question n’a que trois propositions : elle doit être rejetée."}
+PASS: Aucune question valide : erreur 502
+PASS: Mélange : la bonne réponse suit sa proposition (200 tirages)
+PASS: Mélange : la bonne réponse occupe toutes les positions A à D
+PASS: Lettre en minuscule acceptée
+PASS: « Toutes les réponses » refusé
+PASS: Propositions identiques (casse ignorée) refusées
+PASS: Question en double supprimée
+PASS: Cours long tronqué à 24 000 caractères
+PASS: Espaces et fins de ligne normalisés
+PASS: TXT encodé en Windows-1252 converti en UTF-8
+PASS: Cours trop court refusé (422)
+PASS: PDF refusé pour la génération de quiz (422)
+PASS: DOCX : paragraphes extraits, entités décodées
+PASS: Prompt : cours délimité et consigne d’ignorer ses instructions
+PASS: Mélange : 5 éléments valides, de 4 types différents
+PASS: Vrai/faux : une lettre autre que A ou B est refusée
+PASS: Vrai/faux : B correspond à Faux, propositions Vrai puis Faux
+PASS: Fiche : recto trop long refusé
+PASS: Fiche : verso vide refusé
+PASS: Fiche : terme et définition repris de question/explanation si front/back sont vides
+PASS: Questions reliées : chaque élément de gauche retrouve sa bonne correspondance après mélange
+PASS: Questions reliées : moins de 3 couples refusé
+Study quiz insuffisant : 5 reçu(s), type demandé=flashcard, types={"mcq":2,"true_false":1,"flashcard":1,"matching":1}, premier={"type":"mcq","question":"Quel est le rôle de l’étiquette dans l’apprentissage supervisé ?","options":["Indiquer la bonne réponse attendue pour chaque exemple","Réduire la taille du jeu de données","Regrouper les exemples qui se ressemblent","Mesurer la vitesse d’entraînement"],"correct":"A","explanation":"L’étiquette, ou cible, est la bonne réponse connue pour chaque exemple d’
+PASS: Filtre par type : une seule fiche valide, donc erreur 502
+PASS: DOCX : seule l’image PNG est extraite (le fichier non image est ignoré)
+PASS: Cours TXT : aucune image extraite
+PASS: Image : une image par question, numéro inexistant ou déjà utilisé refusé
+PASS: Type « image » : QCM acceptés, fiche refusée
+PASS: Message avec image : image envoyée en image_url et numérotée
+PASS: Types proposés : même liste que QUIZ_KINDS
+PASS: Types proposés : chaque type a un libellé et une aide
+
+Tous les tests sont passés.
+--- study_test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+PASS: Recherche : accents et casse ignorés
+PASS: Recherche : même nombre de caractères après normalisation
+PASS: Mots de recherche : un seul caractère ignoré, doublons retirés
+PASS: Mots de recherche : rien d’utilisable
+PASS: Passages : mot trouvé sans tenir compte des accents ni de la casse
+PASS: Passages : tous les mots doivent figurer dans la même ligne
+PASS: Passages : aucun résultat si le mot est absent
+PASS: Passages : une recherche d’un seul caractère ne renvoie rien
+PASS: Extrait : longueur limitée et mot recherché visible
+PASS: Passages : nombre maximal de résultats respecté
+PASS: Recherche cours : passage trouvé dans le TXT avec le nom du cours
+PASS: Recherche cours : PDF compté comme non pris en compte
+PASS: Recherche cours : aucun passage quand le mot est absent
+PASS: Assistant : texte d’un TXT lu
+PASS: Assistant : PDF refusé avec un message (422)
+PASS: Assistant : cours sans texte refusé (422)
+PASS: Assistant : texte limité à 24 000 caractères
+PASS: Messages assistant : un message système puis un message utilisateur
+PASS: Messages assistant : réponse limitée au cours
+PASS: Messages assistant : cours et question dans le message utilisateur
+PASS: Assistant : passage pertinent gardé dans un long cours, limite respectée
+PASS: Assistant : cours court renvoyé tel quel
+PASS: Assistant : sans mot en commun, début du cours gardé
+Study AI HTTP 429: {"error":{"code":"rate_limit_exceeded"}}
+Study AI HTTP 429: 
+PASS: Erreur IA 429 : message d’attente (limite de débit)
+Study AI HTTP 401: {"error":{"code":"invalid_api_key"}}
+PASS: Erreur IA 401 : clé refusée, renvoi vers config/groq.php
+Study AI HTTP 413: 
+PASS: Erreur IA 413 : requête trop lourde
+Study AI HTTP 400: {"error":{"code":"model_not_found"}}
+PASS: Erreur IA autre : code HTTP indiqué
+PASS: Données perso : e-mail masqué
+PASS: Données perso : téléphones masqués (international, FR, TN)
+PASS: Données perso : lien et IBAN masqués
+PASS: Données perso : années et numéros courts conservés
+PASS: Données perso : texte de cours sans donnée personnelle inchangé
+PASS: Sortie IA : JSON conforme accepté
+PASS: Sortie IA : balises HTML retirées
+PASS: Sortie IA : texte non JSON refusé (502)
+PASS: Sortie IA : champ manquant refusé (502)
+PASS: Sortie IA : réponse vide refusée (502)
+PASS: Sortie IA : réponse trop longue refusée (502)
+PASS: Schéma assistant : deux champs obligatoires
+test transport (28): Operation timed out
+PASS: Erreur IA : délai dépassé (timeout) → 504
+test transport (6): Could not resolve host
+PASS: Erreur IA : service injoignable → 502
+
+Tous les tests sont passés.
+--- pdf_test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+PASS: Découpage : aucune ligne au-delà de la largeur
+PASS: Découpage : un mot trop long est coupé
+PASS: Encodage : accents, apostrophe et guillemets en WinAnsi
+PASS: Encodage : caractère absent de WinAnsi remplacé par ?
+PASS: Échappement : parenthèses et antislash
+PASS: Réponses : valeurs valides conservées
+PASS: Réponses : valeurs hors limites ramenées à null
+PASS: Réponses : nombre incorrect refusé (422)
+PASS: Réponses : tableau associatif refusé (422)
+PASS: Réponses : absentes refusées (422)
+PASS: Score : 2 bonnes réponses sur 3 questions notées
+PASS: Score : une association fausse rend la question reliée fausse
+PASS: Rapport : score affiché
+PASS: Rapport : verdict par question
+PASS: Rapport : bonne association affichée pour la question reliée fausse
+PASS: Rapport : verso de la fiche affiché
+PASS: Rapport : votre réponse marquée sur les QCM
+PASS: PDF : en-tête et fin de fichier
+PASS: PDF : une page pour un quiz court
+PASS: PDF : startxref pointe sur la table xref
+PASS: PDF : chaque décalage de la table xref pointe sur son objet
+PASS: PDF : un long rapport est réparti sur plusieurs pages
+
+Tous les tests sont passés.
+
+=== 8. Tests HTTP de bout en bout (XAMPP + service IA demarres) ===
+--- smoke_ia ---
+D�marrage : http://localhost/ai-study-assistant-integre/public/
+PASS : acc�s anonyme refus�, jeton CSRF obligatoire
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\ai-study-assistant-integre\tests\smoke_ia.py", line 95, in <module>
+    assert created['indexed'] is True, f"Indexation attendue apr�s l'import : {body}"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Indexation attendue apr�s l'import : {"message":"Cours import�. Le document est conserv� dans votre espace. Assistant IA 2 indisponible : le cours sera index� plus tard (bouton � Indexer �).","course_id":19,"indexed":false,"classified":false}
+Code retour : 1
+--- smoke ---
+PASS: signup, duplicate email, login/logout, CSRF, upload, owner-only download and goal isolation.
+Test accounts and file remain in this isolated installation. No automatic deletion is performed.
+Code retour : 0
+--- smoke_corrections ---
+PASS: Sans session : redirection vers la connexion
+PASS: API sans session : 401
+PASS: Compte A cr�� et connect�, aucun cours
+PASS: POST sans jeton CSRF refus� (403)
+PASS: Import d'un cours TXT (201)
+PASS: Faux PDF refus� (422)
+PASS: Le cours appara�t dans la liste de A
+PASS: Recherche sans accent trouve � r�gression �
+PASS: Assistant : r�ponse ou erreur IA explicite (200)
+PASS: Statistiques disponibles
+PASS: Compte B : ne voit pas les cours de A
+PASS: Compte B : t�l�chargement du cours de A refus� (404)
+PASS: Compte B : assistant sur le cours de A refus� (404)
+
+Tous les tests HTTP sont pass�s.
+Code retour : 0
+
+=== 9. Module Evaluation (Gemini : cle dans config\gemini.php) ===
+--- ai-test (ping) ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Bonjour !",
+            "thoughtSignature": "EtcFCtQFAWkUfROYa2KvOctI2OVQFbutWuvQ/dlpfRpgpTXkoSbJlE0HjQkfcqDM0le34K1QSs5ZO5ca1/AgsE+SpLEQXCyBD6I5lHyHDwi1GgB2FnWaQAXahJ6Wt6AwuMDB0scp6tkUN2K6TGIOn14brqKGA6yaZhd+pGVXPp2Xw9FVVCBMVM6X998mTCzunoExa23WwbWRNgycdPdNb6hskPRZ/Y8VlNOBj7Qj1CiyFxRyNaH/dZjvfaOnTJ7xSoT9l7GeZDJZtnqrTIvbCgof3sPbbTNoTfElWPcLHI2XR2yovZvgQnyoAXoQEMUiuJz1ePSIsjtqsVjgyPNE3EzN5sNw2XToW3El7EjkS4MHKg4kmnQEMUxP6MZiUiO4CRRDmM3PDvj7aFKL8LGwA3lqYLeOGjXHmnZd8iV2H40ZsckS2qw7HgibgGmV4sCcMqBnY0d0qGkQmJBmN2UpBMyF+3RlrYCycYJndrvPq205zq/E5umxm+JU5ky+qXMfpaIHe79N2S4tY29FKdtasx5A2JRCQnTgBIm21XiwY5+q3Okvfvz1aOGrJrRn5CSAEPkxGxEPMqGObzcqXXRuk52KvFPAqpjNXaTD32bI2vcO7414MeN8Vkbu1OECRQKHQMOU1IeS7FA2PUmknvBd9Jf8rTbwwuHUqbhOrXGSCmJUU50xmvYs1cNEZQDgjpvAijDIw8bOekOHEoy1SLhfrw/MxekYbfiykNQLbx0GWhEj1xrYgJVKE918w6wl7ojXaD2SgQmRfwytQWW6xYRkmsrx8qcOKGhOKZh9SgR08uy+Wj2OcyW9Iis9jw0hmIUXYni/ylU59rT/X8JlRflnJPHve3gntuH89IUOC3jEqNe/5fGg5IyzaUztQ020kmij6/YW3eq2gK1xYg/rWPtvrw66JRu1mbc7jqoqFrdW+T+aBEBAQxogjAGfwXhSuAmpnjPtjc8C3qW+GA=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 8,
+    "candidatesTokenCount": 2,
+    "totalTokenCount": 178,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 8
+      }
+    ],
+    "thoughtsTokenCount": 168,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.6-flash",
+  "responseId": "vIDgav6yD5OevdIPkP3kmQE"
+}
+
+HTTP 200
+--- helper-test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+Array
+(
+    [ok] => 1
+    [msg] => salut
+)
+--- pdf-test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+{
+    "score": "3\/5",
+    "niveau": "intermédiaire",
+    "points_forts": [
+        "Classification",
+        "Régression",
+        "Évaluation sur données d'entraînement"
+    ],
+    "points_faibles": [
+        {
+            "sujet": "Définition de l'apprentissage supervisé",
+            "reussite": "0\/1",
+            "explication": "Au lieu de retenir l'entraînement avec des étiquettes (bonnes réponses) connues, la réponse choisie évoquait un regroupement automatique de clients sans utiliser de données."
+        },
+        {
+            "sujet": "Rôle de l'ensemble de test",
+            "reussite": "0\/1",
+            "explication": "Au lieu de le réserver à l'évaluation du modèle, la réponse choisie lui attribuait le rôle d'éliminer le sous-apprentissage durant la phase d'entraînement."
+        }
+    ],
+    "erreurs_recurrentes": [
+        "Confusion entre l'apprentissage supervisé (avec étiquettes connues) et d'autres approches sans données ou sans étiquettes.",
+        "Confusion entre les actions réalisées pendant l'entraînement et la fonction exclusive de l'ensemble de test réservé à l'évaluation."
+    ],
+    "conseils": [
+        "Associer systématiquement l'apprentissage supervisé à la présence d'étiquettes ou cibles connues.",
+        "Bien séparer les rôles : les données d'entraînement servent à apprendre, l'ensemble de test sert uniquement à évaluer."
+    ],
+    "plan_revision": [
+        {
+            "etape": 1,
+            "action": "Revoir la définition de l'apprentissage supervisé et le rôle des étiquettes.",
+            "duree_min": 15
+        },
+        {
+            "etape": 2,
+            "action": "Étudier la distinction entre l'ensemble d'entraînement et l'ensemble de test pour l'évaluation.",
+            "duree_min": 15
+        }
+    ]
+}
+--- feedback-test ---
+PHP Warning:  Module "openssl" is already loaded in Unknown on line 0
+
+Warning: Module "openssl" is already loaded in Unknown on line 0
+{
+    "score": "4\/8",
+    "niveau": "intermédiaire",
+    "points_forts": [
+        "Prétraitement"
+    ],
+    "points_faibles": [
+        {
+            "sujet": "Apprentissage supervisé",
+            "reussite": "1\/3",
+            "explication": "Des hésitations subsistent sur les concepts de base et les types d'algorithmes supervisés."
+        },
+        {
+            "sujet": "Réseaux de neurones",
+            "reussite": "1\/2",
+            "explication": "La compréhension du fonctionnement de base des réseaux de neurones doit être consolidée."
+        },
+        {
+            "sujet": "Évaluation de modèles",
+            "reussite": "1\/2",
+            "explication": "Confusions possibles sur le choix et l'interprétation des métriques de performance."
+        }
+    ],
+    "erreurs_recurrentes": [
+        "Confusion sur les notions fondamentales de l'apprentissage supervisé",
+        "Méconnaissance de certaines métriques d'évaluation de modèles"
+    ],
+    "conseils": [
+        "Relire la théorie sur l'apprentissage supervisé (différence classification vs régression).",
+        "Faire un schéma récapitulatif de l'architecture d'un réseau de neurones basique.",
+        "Revoir la matrice de confusion et la signification des métriques clés (précision, rappel)."
+    ],
+    "plan_revision": [
+        {
+            "etape": 1,
+            "action": "Revoir le cours sur l'apprentissage supervisé et faire des fiches mémoires.",
+            "duree_min": 25
+        },
+        {
+            "etape": 2,
+            "action": "Étudier les concepts clés des réseaux de neurones (couches, fonctions d'activation).",
+            "duree_min": 20
+        },
+        {
+            "etape": 3,
+            "action": "S'entraîner à calculer et interpréter les métriques d'évaluation de modèles.",
+            "duree_min": 15
+        }
+    ]
+}
+
+=== FIN ===

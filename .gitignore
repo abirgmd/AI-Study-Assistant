@@ -1,10 +1,28 @@
-/config/database.php
-/storage/courses/*
-!/storage/courses/.gitkeep
-*.log
+# Secrets et configuration locale : ne jamais versionner
+config/groq.php
+config/ai.php
+config/database.php
+config/gemini.php
+config/ia-service.php
+.env
 
-modules/semantic_search/.venv/
-.venv/
+# Documents importés par les étudiants (données personnelles)
+storage/courses/*
+!storage/courses/.gitkeep
+# Index vectoriels des cours (Assistant IA 2) : contiennent des extraits de cours
+storage/indexes/*
+!storage/indexes/.gitkeep
+# Service IA Python : environnement virtuel, caches et journal de corrections
+ai-service/.venv/
 __pycache__/
-*.pyc
 .pytest_cache/
+.ruff_cache/
+.coverage
+ai-service/data/classification/feedback.csv
+
+# Divers
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,6 @@
+cle,modele,meilleurs_parametres,cv_f1_macro,cv_f1_ecart_type,entrainement_final_s,recherche_grille_s,test_reel_exactitude,test_reel_f1_macro,latence_ms_par_document,taille_mo,cv_log_loss,retenu
+nb,TF-IDF + Naive Bayes multinomial (référence),"{""clf__alpha"": 0.05, ""features__word__min_df"": 1, ""features__word__ngram_range"": [1, 1]}",0.8318,0.0384,0.225,12.6,0.8434,0.5743,3.83,0.74,0.6162,oui
+logreg,TF-IDF + Régression logistique,"{""clf__C"": 1.0, ""features__word__min_df"": 1, ""features__word__ngram_range"": [1, 2]}",0.8284,0.0402,0.684,35.3,0.8434,0.6639,3.98,1.1,1.3628,
+svm,TF-IDF + SVM linéaire calibré,"{""clf__estimator__C"": 0.1, ""features__word__min_df"": 1, ""features__word__ngram_range"": [1, 2]}",0.824,0.0411,0.328,20.4,0.8434,0.6639,8.14,2.58,0.6461,
+rf,TF-IDF + Forêt aléatoire,"{""clf__max_depth"": null, ""clf__min_samples_leaf"": 2}",0.7014,0.0397,1.349,30.3,0.6988,0.4112,78.93,1.69,1.2741,
+emb_logreg,Embeddings (module 3) + Régression logistique,"{""clf__C"": 1.0}",0.5503,0.0318,0.163,4.0,0.6988,0.5011,8.75,0.02,1.6835,

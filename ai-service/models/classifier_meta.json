@@ -1,0 +1,56 @@
+{
+  "version": "20261025-131417",
+  "date": "2026-10-25T13:14:17+00:00",
+  "modele": "TF-IDF + Naive Bayes multinomial (référence)",
+  "cle": "nb",
+  "parametres": {
+    "clf__alpha": 0.05,
+    "features__word__min_df": 1,
+    "features__word__ngram_range": [
+      1,
+      1
+    ]
+  },
+  "embedding_backend": "hashing",
+  "categories": [
+    "Intelligence artificielle",
+    "Génie logiciel",
+    "Bases de données",
+    "Réseaux et sécurité",
+    "Développement web",
+    "Mathématiques",
+    "Systèmes et architecture",
+    "Gestion et soft skills"
+  ],
+  "metriques": {
+    "cv_f1_macro": 0.8318,
+    "cv_f1_ecart_type": 0.0384,
+    "cv_log_loss": 0.6162,
+    "test_reel_exactitude": 0.8434,
+    "test_reel_f1_macro": 0.5743,
+    "latence_ms_par_document": 3.83,
+    "taille_mo": 0.74
+  },
+  "donnees": {
+    "entrainement": 482,
+    "test_reel": 83,
+    "classes_du_test_reel": [
+      "Intelligence artificielle",
+      "Génie logiciel",
+      "Bases de données",
+      "Réseaux et sécurité",
+      "Développement web",
+      "Gestion et soft skills"
+    ]
+  },
+  "textes_a_relire": 81,
+  "seuil_confiance": 0.75,
+  "regle_du_seuil": "plus petit seuil donnant au moins 90% d'exactitude parmi les cours classés automatiquement, mesuré en validation croisée sur l'entraînement",
+  "versions": {
+    "python": "3.13.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "regle_de_choix": "meilleur F1 macro en validation croisée (à 0.01 près), puis plus faible log-loss en validation croisée ; le test réel n'intervient pas dans le choix"
+}

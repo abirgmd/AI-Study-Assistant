@@ -1,0 +1,35 @@
+/* Module « Assistant IA 2 » (modules 3 et 5). Ne touche que #ia2-modal et ses éléments. */
+#ia2-modal { width: min(720px, 94vw); }
+#ia2-modal h3 { font-size: 14px; margin: 0 0 8px; color: #253858; }
+#ia2-modal h4 { font-size: 12px; margin: 0 0 4px; color: #253858; }
+#ia2-modal .ia2-sec { border-top: 1px solid #e3ecfb; margin-top: 18px; padding-top: 16px; }
+#ia2-modal .ia2-label { display: block; font-size: 12px; font-weight: 600; color: #253858; }
+#ia2-modal .ia2-label select { font-weight: 400; }
+#ia2-modal .ia2-help { font-size: 12px; color: #737c99; margin: 4px 0 10px; line-height: 1.6; }
+#ia2-modal #result, #ia2-modal p.err { color: #a32e3b; }
+#ia2-modal .ia2-text { background: #f5f9ff; border: 1px solid #d5e5ff; border-radius: 10px; padding: 14px 16px;
+  color: #253858; font-size: 13px; line-height: 1.7; white-space: pre-wrap; }
+#ia2-modal .ia2-text.abstained { background: #fff8e6; border-color: #ffe2a3; }
+#ia2-modal .ia2-sources { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+#ia2-modal .ia2-sources li { border-left: 3px solid #227cff; padding: 4px 0 4px 12px; font-size: 12px; color: #4b638d; }
+#ia2-modal .ia2-sources b { display: block; color: #1764d4; margin-bottom: 3px; }
+#ia2-modal .ia2-sources span { display: block; line-height: 1.6; color: #5b6a86; }
+#ia2-modal .ia2-sources small { color: #8a95ad; }
+#ia2-modal .ia2-meta { font-size: 11px; color: #8a95ad; margin: 10px 0 0; }
+#ia2-modal .ia2-history { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 12px; }
+#ia2-modal .ia2-history .textbtn { text-align: left; }
+#ia2-modal .ia2-courses { display: grid; gap: 10px; }
+#ia2-modal .ia2-course { border: 1px solid #e3ecfb; border-radius: 10px; padding: 12px 14px; }
+#ia2-modal .ia2-course-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+#ia2-modal .ia2-course-head b { font-size: 13px; color: #253858; }
+#ia2-modal .ia2-chip { font-size: 11px; border-radius: 20px; padding: 4px 10px; background: #edf3ff; color: #4e6590; }
+#ia2-modal .ia2-chip.ok { background: #e4fbf1; color: #217555; }
+#ia2-modal .ia2-chip.warn { background: #fff6d4; color: #94700a; }
+#ia2-modal .ia2-row { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+#ia2-modal .ia2-row .ia2-label { flex: 1; min-width: 180px; }
+#ia2-modal .ia2-row select { margin-bottom: 0; }
+#ia2-modal .mini { border: 0; border-radius: 7px; background: #edf3ff; color: #1764d4; padding: 10px 12px;
+  font-size: 12px; font-weight: 600; margin: 6px 0 0; }
+#ia2-modal .mini:disabled, #ia2-modal .btn:disabled { opacity: .6; cursor: default; }
+#ia2-modal .mini.ia2-delete { background: #fdecef; color: #a32e3b; }
+@media (max-width: 700px) { #ia2-modal .ia2-row .ia2-label { min-width: 100%; } }

@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(README|INSTALLATION|.*\.sql|.*\.example\.php|.*\.zip)">
+ Require all denied
+</FilesMatch>
