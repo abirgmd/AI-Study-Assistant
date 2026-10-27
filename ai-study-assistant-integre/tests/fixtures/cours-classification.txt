@@ -1,0 +1,11 @@
+Apprentissage supervisé
+
+L’apprentissage supervisé consiste à entraîner un modèle à partir d’exemples dont la bonne réponse, appelée étiquette ou cible, est connue. Le modèle apprend une fonction qui associe une entrée à une sortie.
+
+Il existe deux grandes familles de problèmes. La classification prédit une catégorie discrète, par exemple « spam » ou « non spam ». La régression prédit une valeur numérique continue, par exemple le prix d’un logement.
+
+Pour évaluer un modèle, on sépare les données en deux ensembles : l’ensemble d’entraînement, utilisé pour apprendre, et l’ensemble de test, réservé à l’évaluation. Évaluer le modèle sur les données d’entraînement donnerait une image trop optimiste de ses performances.
+
+Un modèle qui mémorise les exemples d’entraînement, y compris leur bruit, présente un surapprentissage : il réussit très bien sur les données d’entraînement mais généralise mal à de nouvelles données. À l’inverse, un modèle trop simple souffre de sous-apprentissage et n’arrive pas à capturer la structure des données.
+
+L’apprentissage non supervisé travaille sur des données sans étiquettes. Il sert par exemple à regrouper des clients ayant des comportements similaires, ce qu’on appelle le clustering.

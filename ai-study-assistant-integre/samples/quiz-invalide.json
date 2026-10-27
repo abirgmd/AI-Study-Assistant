@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "question": "Combien d’options cette question possède-t-elle ?",
+      "options": ["Deux", "Trois", "Quatre"],
+      "correct": "A",
+      "explanation": "Cette question n’a que trois propositions : elle doit être rejetée."
+    },
+    {
+      "question": "Quelle lettre est la bonne réponse de cette question ?",
+      "options": ["A", "B", "C", "D"],
+      "correct": "E",
+      "explanation": "La lettre E n’existe pas dans un QCM à quatre propositions."
+    },
+    {
+      "question": "Une proposition est-elle répétée dans cette question ?",
+      "options": ["Oui", "Non", "Oui", "Peut-être"],
+      "correct": "A",
+      "explanation": "Deux propositions identiques rendent la question ambiguë."
+    },
+    {
+      "question": "Quelle est la bonne réponse parmi les suivantes ?",
+      "options": ["Toutes les réponses sont correctes", "Aucune de ces réponses", "Le surapprentissage", "Le clustering"],
+      "correct": "C",
+      "explanation": "« Toutes les réponses » et « aucune de ces réponses » ne sont jamais acceptées."
+    },
+    {
+      "question": "Quelle notion est décrite dans le cours ?",
+      "options": ["La régression", "La classification", "Le clustering", "La validation croisée"],
+      "correct": "A",
+      "explanation": ""
+    },
+    {
+      "question": "Vrai ?",
+      "options": ["Oui", "Non", "Parfois", "Jamais"],
+      "correct": "A",
+      "explanation": "L’énoncé est trop court pour être une question de révision."
+    }
+  ]
+}
