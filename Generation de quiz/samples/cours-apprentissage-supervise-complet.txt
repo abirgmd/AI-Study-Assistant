@@ -1,0 +1,33 @@
+Cours : Introduction à l'apprentissage supervisé
+
+1. Définition
+L'apprentissage supervisé est une branche de l'apprentissage automatique dans laquelle un modèle apprend à partir d'exemples étiquetés. Chaque exemple d'entraînement associe des caractéristiques d'entrée à une sortie attendue, appelée étiquette ou cible. L'objectif est d'apprendre une fonction capable de prédire correctement l'étiquette de nouveaux exemples jamais vus.
+
+2. Classification et régression
+On distingue deux grandes familles de problèmes supervisés.
+La classification consiste à prédire une catégorie discrète : par exemple, déterminer si un e-mail est un spam ou non, ou reconnaître un chiffre manuscrit parmi dix classes.
+La régression consiste à prédire une valeur numérique continue : par exemple, estimer le prix d'un appartement à partir de sa surface, de son quartier et de son nombre de pièces.
+
+3. Jeux de données
+Les données sont généralement divisées en trois ensembles. Le jeu d'entraînement sert à ajuster les paramètres du modèle. Le jeu de validation sert à choisir les hyperparamètres et à comparer plusieurs modèles. Le jeu de test, utilisé une seule fois à la fin, permet d'estimer la performance réelle du modèle sur des données nouvelles.
+
+4. Validation croisée
+La validation croisée à k plis découpe les données en k parties de taille égale. Le modèle est entraîné k fois, chaque fois sur k-1 parties, et évalué sur la partie restante. La moyenne des k scores donne une estimation plus fiable de la qualité du modèle, surtout lorsque le jeu de données est petit.
+
+5. Surapprentissage et sous-apprentissage
+Le surapprentissage (overfitting) se produit lorsqu'un modèle apprend par cœur les données d'entraînement, y compris leur bruit : il obtient d'excellents résultats à l'entraînement mais généralise mal. Le sous-apprentissage (underfitting) se produit lorsque le modèle est trop simple pour capturer la structure des données : il est mauvais à l'entraînement comme au test.
+Pour limiter le surapprentissage, on peut ajouter des données, simplifier le modèle, utiliser la régularisation (L1 ou L2) ou l'arrêt précoce (early stopping).
+
+6. Algorithmes classiques
+La régression linéaire modélise la cible comme une combinaison linéaire des caractéristiques.
+La régression logistique, malgré son nom, est un algorithme de classification : elle estime la probabilité qu'un exemple appartienne à une classe grâce à la fonction sigmoïde.
+Les k plus proches voisins (k-NN) classent un exemple selon la classe majoritaire de ses k voisins les plus proches.
+Les arbres de décision découpent l'espace des caractéristiques par une suite de questions simples. Une forêt aléatoire combine de nombreux arbres entraînés sur des sous-échantillons pour réduire la variance.
+Les machines à vecteurs de support (SVM) cherchent l'hyperplan qui sépare les classes avec la plus grande marge.
+
+7. Métriques d'évaluation
+Pour la classification : l'exactitude (accuracy) est la proportion de prédictions correctes ; la précision mesure la part de vrais positifs parmi les prédictions positives ; le rappel mesure la part de vrais positifs retrouvés parmi tous les positifs réels ; le score F1 est la moyenne harmonique de la précision et du rappel. La matrice de confusion récapitule vrais positifs, faux positifs, vrais négatifs et faux négatifs.
+Pour la régression : l'erreur absolue moyenne (MAE), l'erreur quadratique moyenne (MSE) et le coefficient de détermination R².
+
+8. Biais et variance
+Le compromis biais-variance décrit la tension entre un modèle trop simple (biais élevé) et un modèle trop complexe (variance élevée). Le bon modèle minimise l'erreur totale sur des données nouvelles.
