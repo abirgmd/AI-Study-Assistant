@@ -1,0 +1,60 @@
+La gestion de projet consiste à atteindre un objectif dans des délais, un budget et un niveau de qualité définis. Le chef de projet planifie les tâches, coordonne l'équipe, suit l'avancement et gère les risques.
+Le triangle de la gestion de projet relie le périmètre, les délais et les coûts. Modifier l'un des trois côtés impacte forcément les autres : ajouter des fonctionnalités sans délai supplémentaire augmente les coûts ou réduit la qualité.
+Le diagramme de Gantt représente les tâches d'un projet sur une échelle de temps, avec leurs durées et leurs dépendances. Il permet de visualiser le planning et de suivre l'avancement réel par rapport au prévu.
+La méthode PERT et le calcul du chemin critique identifient les tâches dont le moindre retard décale la date de fin du projet. Les autres tâches disposent d'une marge qui laisse de la souplesse au planning.
+La structure de découpage du projet, ou WBS, décompose le livrable final en lots de travail de plus en plus fins, jusqu'à des tâches estimables et attribuables à une personne.
+La matrice RACI précise pour chaque activité qui la réalise, qui en est responsable, qui doit être consulté et qui doit être informé. Elle évite les zones grises où personne ne se sent responsable.
+La gestion des risques identifie les événements incertains qui pourraient affecter le projet, évalue leur probabilité et leur impact, puis définit des actions pour les éviter, les réduire, les transférer ou les accepter.
+Le cahier des charges formalise les besoins du client, les contraintes et les critères de réception. Un document précis limite les malentendus et sert de référence en cas de désaccord sur le périmètre.
+La communication interpersonnelle repose sur l'écoute active : reformuler ce que dit l'interlocuteur, poser des questions ouvertes et vérifier sa compréhension avant de répondre.
+Le feedback constructif décrit des faits observables, leur impact et une proposition d'amélioration, plutôt que de juger la personne. La méthode situation, comportement, impact structure ce type de retour.
+La gestion des conflits dans une équipe commence par séparer les personnes du problème. On identifie les intérêts de chacun, on cherche des options mutuellement acceptables et on s'appuie sur des critères objectifs.
+La prise de parole en public se prépare : définir le message clé, structurer l'intervention en trois parties, répéter à voix haute et anticiper les questions. Le regard et le rythme comptent autant que le contenu.
+Une présentation efficace limite chaque diapositive à une idée, privilégie les visuels aux paragraphes et raconte une histoire. Le public retient rarement plus de trois messages principaux.
+La gestion du temps s'appuie sur la priorisation. La matrice d'Eisenhower classe les tâches selon leur urgence et leur importance afin de traiter d'abord l'important avant qu'il ne devienne urgent.
+La technique Pomodoro alterne vingt-cinq minutes de travail concentré et cinq minutes de pause. Elle limite la procrastination et rend visible le temps réellement consacré à chaque tâche.
+Le leadership situationnel adapte le style du manager au niveau d'autonomie du collaborateur : directif pour un débutant, persuasif, participatif puis délégatif lorsque la personne maîtrise sa mission.
+La motivation au travail dépend de facteurs intrinsèques comme l'autonomie, la maîtrise et le sens, plus que de récompenses externes. Un manager favorise l'engagement en expliquant le pourquoi des objectifs.
+Les objectifs SMART sont spécifiques, mesurables, atteignables, réalistes et temporellement définis. Réduire de vingt pour cent le temps de réponse du support d'ici juin est un objectif SMART.
+Le travail en équipe passe par des phases de formation, de tensions, de normalisation puis de performance selon le modèle de Tuckman. Les tensions initiales sont normales et se résolvent par des règles communes.
+L'intelligence émotionnelle regroupe la conscience de soi, la maîtrise de ses émotions, l'empathie et les compétences relationnelles. Elle influence fortement la capacité à travailler en équipe et à diriger.
+La négociation raisonnée distingue les positions affichées des intérêts réels. Préparer sa meilleure solution de rechange permet de savoir à quel moment il vaut mieux quitter la table que d'accepter un accord défavorable.
+La rédaction d'un courriel professionnel commence par un objet explicite, place la demande principale dès les premières lignes et se termine par l'action attendue et l'échéance.
+La conduite du changement accompagne les collaborateurs face à une nouvelle organisation ou un nouvel outil. Elle explique les raisons du changement, implique les personnes concernées et forme les utilisateurs.
+Le budget d'un projet recense les coûts de personnel, de matériel, de licences et de sous-traitance. Le suivi régulier des dépenses réelles par rapport au budget permet de réagir avant un dépassement.
+La valeur acquise compare le travail réellement accompli, le travail prévu et le coût réel. Les indices de performance des coûts et des délais signalent tôt une dérive du projet.
+Le comité de pilotage réunit les décideurs du projet à intervalles réguliers. Il valide les jalons, arbitre les changements de périmètre et débloque les ressources lorsque l'équipe rencontre un obstacle.
+La réunion efficace a un objectif clair, un ordre du jour communiqué à l'avance, une durée limitée et un compte rendu indiquant les décisions prises et les actions avec leurs responsables.
+L'entrepreneuriat commence par l'identification d'un problème réel pour des clients. Le business model canvas décrit sur une page la proposition de valeur, les segments de clients, les canaux et les sources de revenus.
+L'analyse SWOT recense les forces et faiblesses internes d'une organisation ainsi que les opportunités et menaces de son environnement. Elle sert de point de départ à la réflexion stratégique.
+Le marketing distingue la segmentation du marché, le ciblage des segments prioritaires et le positionnement de l'offre. Le marketing mix ajuste le produit, le prix, la distribution et la communication.
+La comptabilité générale enregistre les opérations de l'entreprise. Le bilan présente le patrimoine à une date donnée, tandis que le compte de résultat récapitule les produits et les charges de l'exercice.
+Le droit du travail encadre la relation entre l'employeur et le salarié : contrat de travail, période d'essai, durée du travail, congés et conditions de rupture. Le règlement intérieur précise les règles de l'entreprise.
+L'éthique professionnelle de l'ingénieur impose l'honnêteté sur les limites de ses compétences, le respect de la confidentialité et la prise en compte de l'impact social et environnemental de ses réalisations.
+La préparation d'un entretien d'embauche consiste à se renseigner sur l'entreprise, à préparer des exemples concrets de réalisations avec la méthode STAR et à formuler des questions pertinentes sur le poste.
+Le curriculum vitae d'un jeune ingénieur met en avant les projets réalisés, les stages et les compétences techniques, avec des résultats mesurables plutôt qu'une simple liste de tâches.
+La lettre de motivation relie le parcours du candidat aux besoins précis de l'entreprise. Elle montre en quelques paragraphes ce que le candidat apporte, ce qu'il attend et pourquoi cette entreprise en particulier.
+Exercice : en groupe, élaborez la matrice RACI et le diagramme de Gantt d'un projet de développement d'application mobile de six semaines, puis identifiez le chemin critique et trois risques majeurs.
+La créativité en équipe se stimule par le brainstorming : on sépare la phase de production d'idées, sans critique, de la phase d'évaluation. La quantité d'idées favorise l'émergence de solutions originales.
+La pensée critique consiste à examiner les arguments, vérifier les sources et distinguer les faits des opinions avant de tirer une conclusion. Elle protège contre les biais cognitifs comme le biais de confirmation.
+Le management interculturel tient compte des différences de rapport à la hiérarchie, au temps et à la communication. Ce qui passe pour de la franchise dans une culture peut être perçu comme de l'impolitesse dans une autre.
+La qualité totale vise la satisfaction du client par l'amélioration continue. La roue de Deming enchaîne quatre étapes : planifier, réaliser, vérifier et agir, puis recommence le cycle.
+La démarche Lean élimine les gaspillages : attentes, surproduction, stocks inutiles, déplacements et retouches. Elle s'appuie sur l'observation du terrain et l'implication des équipes opérationnelles.
+La responsabilité sociétale des entreprises intègre les préoccupations sociales et environnementales dans leur stratégie. Elle se traduit par des engagements mesurables sur la consommation d'énergie, la diversité ou l'éthique des achats.
+La rédaction d'un rapport de stage présente le contexte de l'entreprise, la mission confiée, la démarche suivie, les résultats obtenus et un bilan personnel. Les annexes contiennent les éléments techniques détaillés.
+Le mentorat associe un professionnel expérimenté à un plus jeune collègue. Le mentor partage son expérience, aide à construire un réseau et accompagne les choix de carrière.
+La délégation efficace confie une mission avec un objectif clair, les moyens nécessaires et un niveau d'autonomie adapté. Le manager reste disponible sans reprendre la tâche à la première difficulté.
+Le travail à distance nécessite des règles d'équipe explicites : plages de disponibilité, outils de communication, comptes rendus écrits des décisions et rituels réguliers pour préserver la cohésion.
+L'entretien annuel d'évaluation fait le bilan des objectifs de l'année écoulée, recueille le ressenti du collaborateur, fixe les objectifs suivants et identifie les besoins de formation.
+La propriété intellectuelle protège les créations : le brevet protège une invention technique, le droit d'auteur une œuvre originale comme un logiciel, et la marque un signe distinctif commercial.
+Le pitch d'une startup présente en quelques minutes le problème, la solution, le marché, le modèle économique, l'équipe et le besoin de financement. Il doit donner envie d'en savoir plus.
+La gestion du stress repose sur l'identification des sources de pression, l'organisation des priorités, des pauses régulières et une bonne hygiène de vie. Demander de l'aide n'est pas un aveu de faiblesse.
+Le retour d'expérience en fin de projet analyse ce qui a fonctionné, ce qui a posé problème et ce qu'il faudrait changer la prochaine fois. Les enseignements sont capitalisés pour les projets suivants.
+La gestion des parties prenantes identifie toutes les personnes concernées par le projet, évalue leur influence et leur intérêt, puis adapte la communication à chacune pour obtenir leur soutien.
+TD : rédigez le compte rendu de la réunion d'avancement fournie en vidéo en dégageant les décisions prises, les actions à mener, leurs responsables et leurs échéances.
+La négociation commerciale prépare l'argumentaire selon les besoins du client, répond aux objections en les reformulant et conclut en obtenant un engagement clair sur la suite.
+L'analyse de la valeur cherche à satisfaire le besoin du client au moindre coût en questionnant chaque fonction du produit. Une fonction coûteuse mais peu utile est simplifiée ou supprimée.
+Le plan de formation d'une entreprise recense les compétences nécessaires à sa stratégie et organise les actions de formation de ses salariés pour réduire l'écart avec les compétences actuelles.
+L'assertivité permet d'exprimer ses besoins et ses désaccords avec respect, sans agressivité ni passivité. Dire non en proposant une alternative préserve à la fois la relation et ses propres priorités.
+La veille stratégique collecte et analyse en continu les informations sur les concurrents, les technologies et la réglementation, afin d'anticiper les évolutions du marché.
+Les indicateurs clés de performance mesurent l'atteinte des objectifs d'une équipe ou d'un projet. Un bon indicateur est simple, mesurable régulièrement et directement lié à une décision à prendre.
