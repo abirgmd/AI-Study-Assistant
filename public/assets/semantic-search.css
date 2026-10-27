@@ -1,0 +1,20 @@
+/* Module 2 : recherche sémantique. Ne touche que #semantic-search-modal. */
+#semantic-search-modal { width: min(680px, 94vw); }
+#semantic-search-modal .ss-note { font-size: 11px; color: #8a95ad; line-height: 1.6; margin: 6px 0 14px; }
+#semantic-search-modal .ss-label { display: block; font-size: 12px; font-weight: 600; color: #253858; }
+#semantic-search-modal .ss-label input,
+#semantic-search-modal .ss-label select { width: 100%; margin: 7px 0 14px; }
+#semantic-search-modal .btn { width: 100%; }
+#semantic-search-modal .btn:disabled { opacity: .6; cursor: default; }
+#semantic-search-modal .ss-status { min-height: 20px; margin: 14px 0 0; font-size: 12px; line-height: 1.6; color: #4b638d; }
+#semantic-search-modal .ss-error { color: #a32e3b; }
+#semantic-search-modal .ss-results { display: grid; gap: 10px; margin-top: 12px; }
+#semantic-search-modal .ss-hit { border: 1px solid #d5e5ff; border-left: 4px solid #227cff; border-radius: 11px;
+  padding: 12px 14px; background: #fff; }
+#semantic-search-modal .ss-hit-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline;
+  flex-wrap: wrap; }
+#semantic-search-modal .ss-hit-head b { font-size: 13px; color: #253858; }
+#semantic-search-modal .ss-score { font-size: 11px; color: #737c99; background: #edf3ff; border-radius: 20px;
+  padding: 3px 9px; white-space: nowrap; }
+#semantic-search-modal .ss-passage { margin: 8px 0 0; font-size: 14px; line-height: 1.6; color: #253858;
+  white-space: pre-wrap; }

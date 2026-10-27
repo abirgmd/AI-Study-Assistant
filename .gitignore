@@ -4,6 +4,7 @@ config/ai.php
 config/database.php
 config/gemini.php
 config/ia-service.php
+config/semantic-search.php
 .env
 
 # Documents importés par les étudiants (données personnelles)
@@ -22,6 +23,7 @@ ai-service/data/classification/feedback.csv
 
 # Divers
 *.log
+resultats-tests-semantic-search.txt
 .DS_Store
 Thumbs.db
 .idea/

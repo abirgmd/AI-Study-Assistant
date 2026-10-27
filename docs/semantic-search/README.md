@@ -18,13 +18,38 @@ ai-study-assistant-integre/
 └── RAPPORT_PROJET_IA_RECHERCHE_SEMANTIQUE.pdf
 ```
 
-Le module reste **autonome** : il n'est pas branché aux pages PHP et n'appelle pas le
-service FastAPI. Le socle partagé `ai-service/app/core/` (extraction, découpage,
-embeddings) peut être réutilisé plus tard pour une intégration dans l'interface web,
-mais la démonstration livrée est volontairement séparée pour ne pas modifier les
-modules existants.
+Le module est désormais **intégré à l'application PHP** : le bouton
+**Recherche sémantique** du menu appelle `public/semantic-search-api.php`, qui
+prépare les cours TXT et DOCX de l'étudiant et interroge un service Python local
+sur `127.0.0.1:8002` (`modules/semantic_search/service.py`). La démonstration
+Streamlit reste disponible pour la soutenance et l'évaluation du module.
 
-## Lancement de la démonstration
+L'intégration ne modifie aucun autre module : elle ajoute un bouton, une fenêtre
+et une API isolée. Le service Python n'est pas exposé sur le réseau et exige un
+jeton interne. Voir [`INTEGRATION_APP.md`](INTEGRATION_APP.md) pour
+l'architecture, la configuration et les tests de bout en bout.
+
+## Intégration dans l'application PHP
+
+```powershell
+# 1. Environnement Python du module (une seule fois)
+cd modules\semantic_search
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+cd ..\..
+
+# 2. Service local, à laisser ouvert pendant la démo
+lancer-recherche-semantique.bat
+
+# 3. Application PHP (XAMPP), puis connexion et import d'un cours TXT/DOCX
+```
+
+Le jeton et l'URL peuvent être personnalisés dans `config/semantic-search.php`
+(copier `config/semantic-search.example.php`). Le jeton du service doit être le
+même que celui du fichier PHP. La variable d'environnement `SEMANTIC_SEARCH_TOKEN`
+est lue par le lanceur et par l'application.
+
+## Lancement de la démonstration Streamlit
 
 Depuis la racine du projet intégré :
 
@@ -78,20 +103,31 @@ qui reprennent les mots du cours.
 ## Tests
 
 ```powershell
+# Tous les tests du module 2 (Python, PHP et service HTTP)
+lancer-tests-semantic-search.bat
+
+# Ou uniquement les tests Python
 cd modules\semantic_search
-python -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Les 27 tests utilisent un embedder déterministe et un faux serveur Ollama : ils
+Les 48 tests utilisent un embedder déterministe et un faux serveur Ollama : ils
 passent sans télécharger de modèle ni lancer de service. FAISS est utilisé s'il est
-disponible ; sinon le moteur bascule automatiquement sur NumPy.
+disponible ; sinon le moteur bascule automatiquement sur NumPy. Le smoke test
+`tests/smoke_semantic_search.py` démarre le service HTTP avec l'embedder de test,
+vérifie `/health`, le jeton, le classement et la validation, puis l'arrête.
 
 ## Livrables
 
+- `modules/semantic_search/service.py` : service HTTP local pour l'application PHP.
 - `modules/semantic_search/demo_app.py` : interface Streamlit.
 - `modules/semantic_search/src/module.py` : découpage, embeddings, index, recherche.
 - `modules/semantic_search/src/evaluate.py` : métriques et baseline mots-clés.
 - `modules/semantic_search/src/build_index.py` : génération de l'index sur disque.
+- `public/semantic-search-api.php` : API JSON protégée par la session étudiante.
+- `public/assets/semantic-search.js` / `.css` : bouton et fenêtre dans l'application.
+- `app/semantic_search.php` : validation, extraction des cours et appel du service.
+- `tests/semantic_search_test.php` / `tests/smoke_semantic_search.py` : tests d'intégration.
 - `modules/semantic_search/search/README.md` : documentation technique complète.
 - `modules/semantic_search/search/role-card.md` : carte de rôle.
 - `modules/semantic_search/prompts.md` : journal des prompts et vérifications.
