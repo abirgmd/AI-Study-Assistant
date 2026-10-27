@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "query": "Comment éviter qu'un modèle apprenne par cœur ?",
+      "relevant_note_ids": ["n-overfitting"]
+    },
+    {
+      "query": "Que représente un vecteur d'embedding ?",
+      "relevant_note_ids": ["n-embedding"]
+    },
+    {
+      "query": "Comment retrouver un passage par le sens plutôt que par les mots exacts ?",
+      "relevant_note_ids": ["n-semantic-search", "n-embedding"]
+    },
+    {
+      "query": "Quel est l'intérêt du RAG pour répondre à une question ?",
+      "relevant_note_ids": ["n-rag"]
+    },
+    {
+      "query": "Comment mesurer la qualité d'un moteur de recherche ?",
+      "relevant_note_ids": ["n-evaluation"]
+    },
+    {
+      "query": "Comment réviser activement avec des questions ?",
+      "relevant_note_ids": ["n-quiz"]
+    }
+  ]
+}
