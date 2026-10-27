@@ -1,0 +1,9 @@
+categorie,precision,rappel,f1,effectif_test
+Intelligence artificielle,0.9118,0.9688,0.9394,32
+Génie logiciel,0.8824,0.9091,0.8955,33
+Bases de données,0.3333,1.0,0.5,1
+Réseaux et sécurité,0.0,0.0,0.0,4
+Développement web,0.7778,0.7778,0.7778,9
+Mathématiques,0.0,0.0,0.0,0
+Systèmes et architecture,0.0,0.0,0.0,0
+Gestion et soft skills,0.5,0.25,0.3333,4

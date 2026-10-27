@@ -1,0 +1,20 @@
+{
+  "modele": "TF-IDF + Naive Bayes multinomial (référence)",
+  "version": "20261025-131417",
+  "test_reel_extraits": 83,
+  "classes_presentes": [
+    "Intelligence artificielle",
+    "Génie logiciel",
+    "Bases de données",
+    "Réseaux et sécurité",
+    "Développement web",
+    "Gestion et soft skills"
+  ],
+  "exactitude": 0.8434,
+  "f1_macro_classes_presentes": 0.5743,
+  "seuil": 0.75,
+  "part_classee_automatiquement": 0.9398,
+  "exactitude_parmi_classes": 0.8718,
+  "laisses_a_classer": 5,
+  "unclassified_label": "À classer"
+}

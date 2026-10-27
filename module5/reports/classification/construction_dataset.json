@@ -1,0 +1,17 @@
+{
+  "par_categorie": {
+    "Intelligence artificielle": 60,
+    "Génie logiciel": 60,
+    "Bases de données": 60,
+    "Réseaux et sécurité": 60,
+    "Développement web": 61,
+    "Mathématiques": 60,
+    "Systèmes et architecture": 61,
+    "Gestion et soft skills": 60
+  },
+  "trop_courts": 0,
+  "doublons_exacts": 0,
+  "quasi_doublons": [],
+  "fuites_vers_test_reel": 0,
+  "total": 482
+}

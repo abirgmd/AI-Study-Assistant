@@ -1,0 +1,98 @@
+{
+  "Bases de données": [
+    "schema",
+    "table",
+    "transactions",
+    "colonne",
+    "lectures",
+    "tables",
+    "sql",
+    "primaire",
+    "relationnel",
+    "jointure"
+  ],
+  "Développement web": [
+    "navigateur",
+    "api",
+    "javascript",
+    "html",
+    "css",
+    "js",
+    "cote",
+    "react",
+    "composants",
+    "url"
+  ],
+  "Gestion et soft skills": [
+    "travail",
+    "competences",
+    "projet",
+    "entreprise",
+    "objectifs",
+    "personne",
+    "formation",
+    "equipe",
+    "couts",
+    "marche"
+  ],
+  "Génie logiciel": [
+    "tests",
+    "principe",
+    "metier",
+    "conception",
+    "objet",
+    "patron",
+    "couverture",
+    "comportement",
+    "code",
+    "interface"
+  ],
+  "Intelligence artificielle": [
+    "entrainement",
+    "apprentissage",
+    "poids",
+    "jeu",
+    "classification",
+    "proches",
+    "neurones",
+    "entraine",
+    "perte",
+    "exemples"
+  ],
+  "Mathématiques": [
+    "loi",
+    "intervalle",
+    "degre",
+    "esperance",
+    "matrice",
+    "vecteurs",
+    "egale",
+    "echantillon",
+    "seulement",
+    "somme"
+  ],
+  "Réseaux et sécurité": [
+    "ip",
+    "paquets",
+    "tcp",
+    "protocole",
+    "securite",
+    "internet",
+    "adresses",
+    "trafic",
+    "attaque",
+    "dns"
+  ],
+  "Systèmes et architecture": [
+    "processeur",
+    "memoire",
+    "processus",
+    "demarrage",
+    "processeurs",
+    "noyau",
+    "exploitation",
+    "peripheriques",
+    "appel",
+    "registres"
+  ]
+}
