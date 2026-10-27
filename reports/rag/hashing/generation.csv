@@ -1,0 +1,10 @@
+generateur,prompt,rag,score_moyen_0_2,reponses_score_2,abstention_a_tort_dans_cours,abstention_correcte_hors_cours,latence_moy_ms,latence_p95_ms,appels_llm,caracteres_prompt_moy,tokens_prompt_moy
+extractive,blocs 400 / seuil équilibré 0.27,oui,0.68,0.24,0.2,1.0,12.4782,15.4533,21,1796.7143,0
+extractive,blocs 400 / seuil retenu 0.15,oui,0.8,0.28,0.08,0.8,12.4501,15.0368,30,1778,0
+extractive,blocs 400 / sans seuil,oui,0.8,0.28,0.08,0.8,12.9544,15.5171,30,1778,0
+extractive,blocs 800 / seuil équilibré 0.27,oui,0.68,0.28,0.44,1.0,12.0727,14.877,14,2952.7857,0
+extractive,blocs 800 / seuil retenu 0.15,oui,0.96,0.4,0.04,0.8,12.5845,15.1495,29,2959.5172,0
+extractive,blocs 800 / sans seuil,oui,0.96,0.4,0.04,0.8,13.1447,15.5932,30,2959.3333,0
+extractive,blocs 1200 / seuil équilibré 0.26,oui,0.32,0.12,0.48,1.0,11.4312,13.6912,13,3299.8462,0
+extractive,blocs 1200 / seuil retenu 0.15,oui,0.6,0.24,0.08,0.8,12.0811,14.9411,29,3316.2414,0
+extractive,blocs 1200 / sans seuil,oui,0.6,0.24,0.08,0.8,12.716,16.3871,30,3317.6333,0

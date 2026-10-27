@@ -1,0 +1,19 @@
+regle_extractive,configuration,score_moyen_0_2,abstention_a_tort_dans_cours,abstention_correcte_hors_cours
+recouvrement >= 1 mot (retenu),blocs 400 / seuil équilibré 0.27,0.68,0.2,1.0
+recouvrement >= 1 mot (retenu),blocs 400 / seuil retenu 0.15,0.8,0.08,0.8
+recouvrement >= 1 mot (retenu),blocs 400 / sans seuil,0.8,0.08,0.8
+recouvrement >= 1 mot (retenu),blocs 800 / seuil équilibré 0.27,0.68,0.44,1.0
+recouvrement >= 1 mot (retenu),blocs 800 / seuil retenu 0.15,0.96,0.04,0.8
+recouvrement >= 1 mot (retenu),blocs 800 / sans seuil,0.96,0.04,0.8
+recouvrement >= 1 mot (retenu),blocs 1200 / seuil équilibré 0.26,0.32,0.48,1.0
+recouvrement >= 1 mot (retenu),blocs 1200 / seuil retenu 0.15,0.6,0.08,0.8
+recouvrement >= 1 mot (retenu),blocs 1200 / sans seuil,0.6,0.08,0.8
+recouvrement >= 2 mots (rejeté),blocs 400 / seuil équilibré 0.27,0.64,0.28,1.0
+recouvrement >= 2 mots (rejeté),blocs 400 / seuil retenu 0.15,0.72,0.24,1.0
+recouvrement >= 2 mots (rejeté),blocs 400 / sans seuil,0.72,0.24,1.0
+recouvrement >= 2 mots (rejeté),blocs 800 / seuil équilibré 0.27,0.64,0.44,1.0
+recouvrement >= 2 mots (rejeté),blocs 800 / seuil retenu 0.15,0.72,0.28,1.0
+recouvrement >= 2 mots (rejeté),blocs 800 / sans seuil,0.72,0.28,1.0
+recouvrement >= 2 mots (rejeté),blocs 1200 / seuil équilibré 0.26,0.32,0.56,1.0
+recouvrement >= 2 mots (rejeté),blocs 1200 / seuil retenu 0.15,0.4,0.24,1.0
+recouvrement >= 2 mots (rejeté),blocs 1200 / sans seuil,0.4,0.24,1.0
