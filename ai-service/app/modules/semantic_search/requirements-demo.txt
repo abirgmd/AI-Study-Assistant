@@ -1,0 +1,5 @@
+# Complément pour lancer la démo Streamlit dans l'environnement du service intégré.
+# Les dépendances de base (torch, sentence-transformers, numpy, faiss) sont déjà
+# versionnées par ai-service/requirements.txt : ne pas réinstaller requirements.txt
+# dans le même environnement.
+streamlit>=1.36,<2.0

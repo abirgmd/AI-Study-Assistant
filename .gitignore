@@ -28,3 +28,8 @@ resultats-tests-semantic-search.txt
 Thumbs.db
 .idea/
 .vscode/
+
+.venv/
+**/.venv/
+__pycache__/
+*.pyc

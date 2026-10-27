@@ -1,0 +1,7 @@
+# Démo autonome. Versions compatibles avec ai-service/requirements.txt.
+# Dans l'environnement du service intégré, ajouter seulement requirements-demo.txt.
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+streamlit>=1.36,<2.0
+pytest>=8.0
+numpy>=1.26,<3.0
